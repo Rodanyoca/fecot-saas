@@ -1,0 +1,22 @@
+node_modules/
+.next/
+out/
+.env*
+!.env.example
+.vercel/
+tsconfig.tsbuildinfo
+playwright-report/
+test-results/
+
+# Builds, caches et fichiers temporaires locaux
+build/
+dist/
+.cache/
+.turbo/
+coverage/
+*.tsbuildinfo
+*.log
+tmp/
+temp/
+*.tmp
+*.temp

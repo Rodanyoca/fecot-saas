@@ -1,0 +1,13 @@
+{
+  "status": "PROPOSITION_NON_APPLIQUEE",
+  "targetEnv": "FECOT_COMPETITIONS_SPREADSHEET_ID",
+  "preconditions": ["Sauvegarde du classeur et des en-têtes", "Validation FECOT des formats et catégories retenus", "Aucun renommage d’identifiant existant", "Application séparée et explicitement autorisée"],
+  "appendColumns": [{"sheet": "COMPETITIONS_EPREUVES", "columns": ["format_resultat"], "optional": true, "allowedValues": ["WT_KYORUGI_BEST_OF_THREE", "WT_POOMSAE_RECONNU", "WT_POOMSAE_LIBRE"], "fallback": "TYPES_COMPETITIONS.format uniquement si un contrat exact reconnu est renseigné"}],
+  "addSheets": [
+    {"name": "COMPETITIONS_PRESTATIONS", "headers": ["id_prestation", "id_competition", "id_epreuve_competition", "id_phase_competition", "id_unite_competition", "ordre_passage", "date_prestation", "heure_prestation", "statut", "observations"]},
+    {"name": "COMPETITIONS_RESULTATS_PRESTATIONS", "headers": ["id_resultat_prestation", "id_prestation", "id_type_resultat", "id_statut_resultat", "id_decision_resultat", "note_officielle", "rang_officiel", "observations"]}
+  ],
+  "referenceConfigurationRequired": ["DISCIPLINES", "CATEGORIES_AGE", "CATEGORIES_COMPETITION selon usage", "TYPES_COMPETITIONS", "TYPES_PHASES", "MODES_PHASES", "TYPES_UNITES_COMPETITION", "TYPES_AFFECTATIONS_PHASES", "TYPES_RESULTATS", "STATUTS_RESULTATS", "DECISIONS_RESULTATS", "TYPES_DISTINCTIONS selon usage", "FONCTIONS facultatif"],
+  "noAutomaticBackfill": true,
+  "notRepresented": ["Composition paire/équipe", "Pesée officielle", "Grade sportif vérifiable", "Notes détaillées par juge/manche/poomsae", "Historique immuable des corrections", "Qualification automatique et départage", "Tableau poomsae avec confrontation directe"]
+}

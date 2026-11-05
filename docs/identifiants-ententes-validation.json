@@ -1,0 +1,32 @@
+{
+  "date": "2026-11-02",
+  "reference": "1517431ca3cb786caaa914129bebf779ba6578c7 + travaux locaux conservés",
+  "testsBefore": { "passed": 72, "failed": 0 },
+  "testsAfter": { "passed": 81, "failed": 0 },
+  "typescript": { "command": "tsc --noEmit --incremental false", "exit": 0 },
+  "lint": { "configuredCommand": "npm run typecheck", "separateLinterConfigured": false, "coveredByTypeScript": true },
+  "browser": {
+    "passed": true,
+    "widths": [1440, 390],
+    "realComponents": true,
+    "writesInMemoryOnly": true,
+    "referenceRepositoryComparisonSkipped": true,
+    "checks": ["0102 preview", "full code normalized to 02", "search by 0102", "club FK 0102", "ordinary edit", "key change blocked", "VIEWER", "no horizontal overflow", "no JavaScript errors"]
+  },
+  "build": {
+    "command": "next build",
+    "exit": 0,
+    "elapsedMs": 495890,
+    "normalBuild": true,
+    "isolated": true,
+    "physicalDependencies": true,
+    "localFonts": true,
+    "noProductionCredentials": true,
+    "sourceFiles": 146,
+    "sourceFilesUnchanged": true
+  },
+  "migration": { "readOnlyGoogleCalls": 9, "ententesFound": 1, "clubsFound": 0, "collisionsFound": 0, "inventoryComplete": false, "applied": false },
+  "limits": ["Global inventory requires confirmation", "No cross-instance uniqueness guarantee without exclusive writer/shared lock", "Legacy key changes require coordinated migration"],
+  "push": false,
+  "deployment": false
+}

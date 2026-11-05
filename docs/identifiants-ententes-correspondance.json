@@ -1,0 +1,20 @@
+{
+  "checkedUtc": "2026-11-02T12:04:46.983Z",
+  "readOnly": true,
+  "sheetsRequests": 9,
+  "inventoryComplete": false,
+  "counts": { "LIGUES": 26, "ENTENTES": 1, "CLUBS": 0 },
+  "mapping": [
+    {
+      "oldId": "FECOT-ENT-0d09376b-2878-47c3-a9fe-c9ccdbf43518",
+      "newId": "0101",
+      "ligueId": "01",
+      "localCode": "01",
+      "row": 2
+    }
+  ],
+  "issues": [{ "kind": "INVENTORY_NOT_CONFIRMED", "location": "workbooks" }],
+  "proposedCells": 1,
+  "applied": false,
+  "executable": false
+}
